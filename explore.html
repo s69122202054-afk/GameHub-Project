@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>GameHub - ค้นหาเกม</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="filterGames()">
+    <header>
+        <h1>GameHub - ค้นหาและกรองเกม</h1>
+        <nav>
+            <a href="index.html">หน้าแรก</a>
+            <a href="explore.html">ค้นหาเกม</a>
+            <a href="summary.html">สรุปรายการ</a>
+        </nav>
+    </header>
+
+    <div>
+        <label>หมวดหมู่:</label>
+        <select id="genreFilter" onchange="filterGames()">
+            <option value="All">ทั้งหมด</option>
+            <option value="Action">Action</option>
+            <option value="RPG">RPG</option>
+            <option value="Simulation">Simulation</option>
+        </select>
+
+        <label>แพลตฟอร์ม:</label>
+        <select id="platformFilter" onchange="filterGames()">
+            <option value="All">ทั้งหมด</option>
+            <option value="PC">PC</option>
+            <option value="Console">Console</option>
+        </select>
+    </div>
+
+    <br>
+    <div id="game-results" class="card-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>GameHub - หน้าแรก</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="renderGenres()">
+    <header>
+        <h1>GameHub</h1>
+        <nav>
+            <a href="index.html">หน้าแรก</a>
+            <a href="explore.html">ค้นหาเกม</a>
+            <a href="summary.html">สรุปรายการ</a>
+        </nav>
+    </header>
+
+    <h2>ยินดีต้อนรับสู่ GameHub</h2>
+    <p>หมวดหมู่เกมที่มีทั้งหมดในระบบ (สกัดจากฐานข้อมูลด้วย Set Theory):</p>
+    <div id="genre-list" style="margin-bottom: 20px;"></div>
+    
+    <button onclick="window.location.href='explore.html'">เริ่มค้นหาเกมเลย</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
