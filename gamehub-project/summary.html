@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>GameHub - สรุปรายการ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="calculateDiscount()">
+    <header>
+        <h1>GameHub - สรุปรายการที่สนใจ</h1>
+        <nav>
+            <a href="index.html">หน้าแรก</a>
+            <a href="explore.html">ค้นหาเกม</a>
+            <a href="summary.html">สรุปรายการ</a>
+        </nav>
+    </header>
+
+    <h2>สรุปค่าใช้จ่าย</h2>
+    <div class="card" style="width: 300px;">
+        <div id="summary-details"></div>
+        <hr>
+        <p style="font-size: 12px; color: gray;">
+            *เงื่อนไข: หากยอดรวมขั้นต่ำ 1,500 บาท จะได้รับส่วนลด 10% (ประมวลผลด้วย If-Else)
+        </p>
+        <button onclick="localStorage.clear(); location.reload();">ล้างตะกร้า</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
